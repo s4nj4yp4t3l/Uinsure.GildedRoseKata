@@ -24,6 +24,7 @@ namespace GildedRoseTests
             Program.Main(new string[] { "30" });
             var output = fakeoutput.ToString();
 
+            // The line below checks the "output" against the text in "ApprovalTest.ThirtyDays.verified.txt".
             return Verifier.Verify(output);
         }
     }
